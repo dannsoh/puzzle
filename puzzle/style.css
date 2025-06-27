@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-color: #4a90e2;
+    background-size: 300px 300px; /* Taille de l'image d'origine */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.puzzle-piece:hover {
+    background-color: #357ab8;
+}
+
+.hidden {
+    background-color: transparent; /* Espace vide */
+}
